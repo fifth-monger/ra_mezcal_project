@@ -7,7 +7,7 @@
   margin: 0 auto;
 }
 body {
-  background: grey;
+  background: #2c394b;
 }
 header {
   background-image:
@@ -63,7 +63,52 @@ header h3 {
   border: white 1px solid;
   background: rgba(0, 0, 0, 0.5);
 }
-@media (max-width: 900px) {
+
+footer {
+  color: white;
+  background-image:
+    linear-gradient(rgba(44, 57, 75, 0.75), rgba(44, 57, 75, 0.9)),
+    url("../media/footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 90px 0;
+}
+footer h3 {
+  font-family: var(--header-font);
+  font-size: 20px;
+  line-height: 30px;
+}
+footer p {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  opacity: 0.9;
+  margin-right: 20px;
+}
+footer ul {
+  padding: 0;
+  font-family: var(--secondary-font);
+}
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
