@@ -1,0 +1,8 @@
+:root {
+  --header-font: "Playfair Display", serif;
+  --secondary-font: "Inter", sans-serif;
+}
+
+h1 {
+  font-family: var(--header-font);
+}
