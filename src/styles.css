@@ -224,10 +224,19 @@ footer a {
     font-size: 48px;
   }
   header h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
   header h3 {
     font-size: 12px;
+  }
+  main h2 {
+    text-align: center;
+  }
+  main h3 {
+    line-height: 1;
+    margin-top: 10px;
+    font-size: 32px;
+    text-align: center;
   }
   .hero-button {
     font-size: 12px;
@@ -243,6 +252,9 @@ footer a {
     display: block;
     margin: 0 auto;
   }
+  .card {
+    margin: 0;
+  }
   .card-header {
     grid-template-columns: 1fr;
   }
@@ -254,5 +266,6 @@ footer a {
   }
   .third-grid {
     grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
   }
 }
