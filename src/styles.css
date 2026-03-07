@@ -95,9 +95,12 @@ main h4 {
 }
 main h5 {
   font-weight: 700;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1;
   margin: 0;
+}
+main em {
+  font-size: 14px;
 }
 main p {
   font-weight: 400;
@@ -107,7 +110,7 @@ main p {
 section {
   max-width: 100%;
   margin: 0 auto;
-  padding: 100px 100px;
+  padding: 100px;
 }
 .grid {
   display: grid;
@@ -117,7 +120,7 @@ section {
   grid-template-columns: 1fr 1fr;
 }
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -127,25 +130,27 @@ section.secondary {
 .grid.secondary-three-col {
   margin-top: 25px;
 }
-
-.secondary-img-responsive {
-  max-width: 50%;
-}
 .text-center {
   text-align: center;
 }
 .secondary-three-col {
   grid-template-columns: 1fr 1fr 1fr;
 }
-h4 span {
-  font-size: 18px;
-  opacity: 0.7;
-  font-style: italic;
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
 }
 .card {
   background: white;
+  margin: 30px 0;
   display: flex;
   flex-direction: column;
+}
+.card-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
 }
 .card-body {
   padding: 30px;
@@ -166,6 +171,12 @@ h4 span {
   padding: 16px;
   background: var(--background-color);
   text-decoration: none;
+}
+.third-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
 }
 
 footer {
@@ -231,5 +242,17 @@ footer a {
   .img-responsive {
     display: block;
     margin: 0 auto;
+  }
+  .card-header {
+    grid-template-columns: 1fr;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16 /9;
+  }
+  .third-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
