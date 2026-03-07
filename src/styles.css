@@ -242,7 +242,7 @@ footer a {
     font-size: 12px;
   }
   section {
-    padding: 50px 50px;
+    padding: 40px;
   }
   .grid {
     grid-template-columns: 1fr;
